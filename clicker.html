@@ -1,0 +1,45 @@
+<!-- 
+ 
+💻 Customize this clicker game! 
+ 
+ideas:
+    - change the images and colors and text
+    - add a new button that decreases the number each click
+    - add a new button that multiplies number x2
+-->
+
+
+<!doctype html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <h1>Clicker game!</h1>
+        <p>Total cookies: <span class="number">0</span></p>
+
+
+        <a class="button" href="#">
+            <img src="cookie.png">
+        </a>
+
+    </body>
+
+    <script>
+        // Get the button & number from HTML Body
+        const button = document.querySelector('.button');
+        const number = document.querySelector('.number');
+
+        let count = 0;
+
+        button.addEventListener('click', () => {
+            count++;
+            number.textContent = count;
+        
+        });
+
+  </script>
+
+</html>
