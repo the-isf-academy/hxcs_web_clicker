@@ -8,8 +8,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Cookie', Arial, sans-serif;
     flex-direction: column;
+}
+
+h1{
+    font-size: 64px;
+}
+
+p{
+    font-size: 36px;
 }
 
 .button{
